@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int cafe;
+    float valor;
+    
+    printf("Café - R$4,50\n");
+    printf("Caro estudante, coloque a quanitdade de café que tu bebeu: \n");
+    scanf("%d", &cafe);
+    printf ("Utilizando da quantidade de café que foi pedido, que é %d, o valor total será:  \n", cafe);
+    scanf("%f", &valor);
+    valor = cafe*4.50;
+    printf ("O valor que você terá de pagar será: %f", valor );
+    return 0;
+    
+    
+}
