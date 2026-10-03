@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0; background-color:bisque;
+    color: #91681c;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/*pa organizar a página doido*/
+
+.layout-pagina {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer"
+    
+    ;
+    grid-template-columns: 440px 1fr;
+    grid-template-rows: auto 1fr auto;
+    
+    min-height: 100vh;
+
+}
+
+/* cabeçaralho, pola*/
+
+.cabeçalho {
+    grid-area: header;
+    background-color: #ce630c;
+    color: rgb(150, 1, 1);
+    padding: 50px;
+    text-align: center;
+}
+
+.cabeçalho h1 {
+    margin: 0 0 10px;
+
+}
+
+.cabeçalho p {
+    margin: 0;
+}
+
+/*menu latera*/
+
+.barra-lateral {
+    grid-area: sidebar;
+
+    background-color: #5a4c41;
+    padding: 20px;
+}
+
+.barra-lateral h2   {
+    color: #924608;
+    padding: 20px;
+}
+
+.barra-lateral ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.barra-lateral li {
+    margin-bottom: 10px;
+}
+
+.barra-lateral a{
+    display: block;
+    background-color: #4d3a2c;
+    color: #ce630c;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.barra-lateral a:hover{
+    background-color: #dacc12;
+}
+
+/*conteudo principal (finalmente)*/
+
+.conteudo-principal {
+    grid-area: main;
+    padding: 50px;
+}
+
+.conteudo-principal h2{
+    margin-top: 0;
+    color: rgb(240, 96, 0);
+}
+
+.grid-principal {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 2rem;
+}
+
+/*cards*/
+
+.card{
+    background-color: #ecd6c5;
+    padding: 20px;
+    border: 1px solid rgb(228, 192, 125);
+    border-radius: 10px;
+    box-shadow: 0 6 7px black;
+
+}
+
+.card h3{
+    margin-top: 0;
+    color: #91681c;
+}
+
+.card p{
+    line-height: 1.6;
+}
+
+.card a{
+    display: inline-block;
+    background-color: #9b9432;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card a:hover{
+    background-color: aliceblue;
+}
